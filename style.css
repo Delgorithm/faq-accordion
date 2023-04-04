@@ -23,81 +23,151 @@ body{
 }
 
 /* IMAGES */
+@media (min-width: 375px) {
+    .container{
+        display: grid;
+        place-content: center;
+    }
+    picture{
+        position: absolute
+    }
+    .image-woman-mobile{
+        position: absolute;
+        height: 140px;
+        max-width: 220px;
+        top: -102px;
+        left: 50px;
+        rotate: calc(-1.6deg);
+        z-index: 2;
+    }
+    
+    .pattern-mobile{
+        position: absolute;
+        height: 100px;
+        width: 200px;
+        top: -30px;
+        left: 45px;
+        rotate: calc(-1.6deg);
+        z-index: 3;
+    }
+    
+    .faq{
+        background-color: aliceblue;
+        display: grid;
+        place-content: center;
+        height: 500px;
+        padding: 1rem;
+        margin: 2rem;
+        margin-top: 8rem;
+        width: 320px;
+        border-radius: 20px;
+    }
+    
+    .faq h1{
+        display: grid;
+        place-content: center;
+    }
+    
+    .label{
+        font-size: 14px;
+        position: relative;
+        cursor: pointer;
+        padding: 1rem;
+    }
+    
+    .label::before{
+        content: ">";
+        position: absolute;
+        top: 30%;
+        right: 2px;
+        font-weight: 800;
+        transform: translate(90deg);
+        color: sandybrown;
+    }
+    
+    .content{
+        position: relative;
+        height: 0;
+        transition: 0.5s;
+        overflow-y: auto;
+        color: black;
+    }
+    
+    .label:active{
+        height: 150px;
+        overflow: visible;
+    }
+    
+    .label:hover{
+        color: orange;
+    }
 
-.container{
-    background-color: white;
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    height: 70svh;
-    width: 320px;
-    left: 30px;
-    top: 120px;
-    border-radius: 20px;
+    .label:active{
+        font-weight: bolder;
+        color: black;
+    }
+
+    .image-woman-desktop,
+    .box-desktop,
+    .pattern-desktop-1{
+        display: none;
+    }
 }
 
-.image-woman-mobile{
-    position: absolute;
-    height: 140px;
-    max-width: 220px;
-    top: -85px;
-    left: 70px;
-    rotate: calc(-1.6deg);
-    z-index: 2;
+@media (min-width: 1440px) {
+    .container{
+        height: 100svh;
+        display: grid;
+        place-content: center;
+    }
+
+    .faq{
+        width: 1200px;
+        height: 600px;
+    }
+
+    .label{
+        width: 400px;
+        left: 600px;
+        font-size: 18px;
+    }
+    
+    h1{
+        position: relative;
+        font-size: 42px;
+        left: 197px;
+    }
+
+    .image-woman-mobile,
+    .pattern-mobile{
+        display: none;
+    }
+
+    .image-woman-desktop,
+    .box-desktop,
+    .pattern-desktop-1{
+        display: inline-block;
+    }
+
+    .image-woman-desktop{
+        position: absolute;
+        left: -120px;
+        top: 60px;
+        height: 450px;
+    }
+
+    .box-desktop{
+        position: absolute;
+        height: 250px;
+        top: 220px;
+        left: -140px;
+    }
+
+    .pattern-desktop-1{
+        position: absolute;
+        width: 1200px;
+        left: -730px;
+        top: -390px;
+    }
 }
 
-.pattern-mobile{
-    position: absolute;
-    height: 100px;
-    width: 200px;
-    top: -20px;
-    left: 63px;
-    rotate: calc(-1.6deg);
-    z-index: 1;
-}
-
-.faq{
-    position: relative;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    margin: 1.4rem;
-    top: 50px;
-}
-
-.faq h1{
-    display: flex;
-    justify-content: center;
-    margin-bottom: 1rem;
-}
-
-/* FAQ DROPDOWN EFFECTS */
-
-.faq label{
-    position: relative;
-    font-weight: 400;
-    display: block;
-    margin-bottom: 10px;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 12px;
-}
-
-.faq label:after{
-    content: "";
-    position: relative;
-}
-
-.text{
-    max-height: 1px;
-    overflow: hidden;
-    width: 200px;
-    font-size: 11px;
-    margin-bottom: 1rem;
-    padding-left: 1rem;
-}
-
-.faq .text{
-
-}
