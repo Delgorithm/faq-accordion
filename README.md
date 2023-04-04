@@ -26,5 +26,5 @@ Your users should be able to:
 ## The project
 
 
-- [GitHub Pages](https://github.com/Delgorithm/faq-accordion))
-- [Vercel]([https://vercel.com/](https://faq-accordion-weld.vercel.app/))
+- [GitHub Pages](https://github.com/Delgorithm/faq-accordion)
+- [Vercel](https://faq-accordion-weld.vercel.app/)
