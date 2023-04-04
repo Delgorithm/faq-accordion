@@ -26,6 +26,5 @@ Your users should be able to:
 ## The project
 
 
-- [GitHub Pages](https://pages.github.com/)
-- [Vercel](https://vercel.com/)
-- [Netlify](https://www.netlify.com/)
+- [GitHub Pages](https://github.com/Delgorithm/faq-accordion))
+- [Vercel]([https://vercel.com/](https://faq-accordion-weld.vercel.app/))
